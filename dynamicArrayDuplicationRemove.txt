@@ -1,0 +1,37 @@
+package number;
+
+import java.util.Scanner;
+
+public class dynamicArrayDuplicationRemove
+{
+	public static void main(String[] args) 	
+	{
+		Scanner s=new Scanner(System.in);
+	    int a1[]={1,2,1,11,11,11,12,12,13,14,13,14,2,3,4,0,0,0};	  
+	    System.out.println("Enter No of Elemets Of array : ");
+	    int   n=s.nextInt();
+	    int a[]=new int[n];
+	    System.out.println("Enter Elemets Of Array  : ");
+	    for(int i=0;i<n;i++)
+	 {
+	    	a[i]=s.nextInt();
+	 }
+	   for(int i=0;i<n;i++)
+	 {
+		for(int j=i+1;j<n;j++)
+		{
+			if(a[i]==a[j])
+			{
+				a[j]=1111132131;
+			}
+		}
+   	}
+	for(int j=0;j<n;j++)
+	{
+		if(a[j]!=1111132131)
+		{				
+				System.out.print("  "+a[j]);							
+		}				
+	}		
+  }
+}

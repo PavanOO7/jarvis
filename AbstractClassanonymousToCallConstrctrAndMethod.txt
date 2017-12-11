@@ -1,0 +1,29 @@
+abstract class Base
+{
+	abstract void fun();
+   		void fun2()
+		{ 
+		    System.out.println("fun2() called"); 
+		}    
+	
+	Base(){
+	    System.out.println("in abstract class constructor");
+	}
+  public static void main(String args[])
+  {
+    Base b=new Base()
+    {
+   		void fun()
+		{ 
+		    System.out.println("fun() called"); 
+		}    
+	
+    };
+    b.fun();
+    
+    b.fun2();
+    
+}
+ 
+}
+

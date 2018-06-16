@@ -1,0 +1,3 @@
+				Intent intent = new Intent(Intent.ACTION_DELETE);
+				intent.setData(Uri.parse("package:com.softland.AcmeBhishi"));
+				startActivity(intent);
